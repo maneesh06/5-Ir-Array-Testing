@@ -1,0 +1,28 @@
+void setup() 
+{ 
+  Serial.begin(9600);   //Necessary to set up Serial port to start communication
+  pinMode(2,INPUT);
+  pinMode(3,INPUT);
+  pinMode(4,INPUT);
+  pinMode(5,INPUT);
+  pinMode(6,INPUT);
+}  
+void loop() 
+{   
+  // we connect the 5 ir sensor 2 3 4 5 6 digital pin
+Serial.print(digitalRead(2));
+Serial.print(' ');
+delay(100);   
+Serial.print(digitalRead(3));  
+Serial.print(' ');
+delay(100); 
+Serial.print(digitalRead(4));
+Serial.print(' ');
+delay(100);   
+Serial.print(digitalRead(5)); 
+Serial.print(' '); 
+delay(100); 
+Serial.print(digitalRead(6));  
+Serial.print(' ');
+delay(100);              //Set the number to change frequency of readings.        
+ }
